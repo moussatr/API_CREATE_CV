@@ -14,9 +14,14 @@ exports.register = async (req, res) => {
 
     // Créer un nouvel utilisateur
     const user = new User({ firstname, lastname, email, password });
-    await user.save();
+    await user
+      .save()
+      .then(() => res.status(201).json({ message: "User created!" }))
+      .catch((error) => {
+        return res.status(400).json({ error });
+      });
 
-    res.status(201).json({ message: "User registered successfully" });
+    // return res.status(201).json({ message: "User registered successfully" });
   } catch (error) {
     res.status(400).json({ error: "Error registering user" });
   }
