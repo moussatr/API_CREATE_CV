@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 
 const userSchema = new mongoose.Schema(
   {
+    cvs: [{ type: mongoose.Schema.Types.ObjectId, ref: "Cv" }],
     firstname: { type: String, required: true },
     lastname: { type: String, required: true },
     email: { type: String, required: true, unique: true },
