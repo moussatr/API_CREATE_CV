@@ -1,6 +1,5 @@
 Groupe 13 :
-
-Mambou Ryan
+Mambou Ryan et
 Traore Moussa
 
 Documentation de l'API - Générateur de CV
