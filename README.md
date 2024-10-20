@@ -2,7 +2,8 @@ Groupe 13 :
 Mambou Ryan et
 Traore Moussa
 
-Documentation de l'API - Création de CV
+Documentation de l'API - Création de CV.
+
 Contexte.
 
 Cette API permet aux utilisateurs de s'inscrire, de créer et de gérer leurs CV, et de générer un PDF de leur CV.
